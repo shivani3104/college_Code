@@ -1,0 +1,9 @@
+sudo dmesg | grep kvm
+
+sudo apt-get update
+
+sudo apt install qemu kvm libvirt.daemon-system virt.manager
+
+sudo adduser $USER libvirt
+
+sudo systemctl enable libvirtd.service --now
