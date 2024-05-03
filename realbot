@@ -1,0 +1,45 @@
+import nltk 
+from nltk.chat.util import Chat,reflections
+
+pairs =[
+    [
+       r"hi|hello|hola|hello there|hey",
+       ["hello i am realbot, i am your real estate assistance. how can I help you"]
+    ],
+    [
+       r"what is your expertise in real estate?",
+       ["i specializied in real estate assistance worldwide. where you interested for exploring real estate property "]
+    ],
+    [
+        r"what service you provide?",
+        [
+            "i provide service like market aalysis,renting and selling,searching property"
+        ]
+    ],
+    [
+      r"how was the market right know? ",
+      ["righ know market is very dynamic.are you look property in this area?"]
+    ],
+    [
+      r"you have any suggestion for real estate in my area?",
+      [  "property area can vary. are you looking for any size and type of propety which you can prefer? "]
+    ],
+    [
+      r"what is typical local propety in my area?",
+      ["you can consult with local real estate expert for advice . i will give general insights of it"]
+    ],
+    [
+      r"Thank you for helping",
+      ["you're welcome! if you have any question than ask freely "]
+    ],
+    [
+      r"quit|bye",
+      ["Thank you for visit!"]
+    ]
+        
+    
+]
+
+print("welcome to expert system")
+chat=Chat(pairs)
+chat.converse()
